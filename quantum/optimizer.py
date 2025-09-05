@@ -5,7 +5,7 @@ import math
 from typing import Dict, List
 from scipy.optimize import minimize
 from collections import defaultdict
-from project.config import BetType, QuantumState, MatchCondition, HumanBiasProfile
+from config import BetType, QuantumState, MatchCondition, HumanBiasProfile
 
 class QuantumOptimizer:
     """
