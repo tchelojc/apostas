@@ -1,7 +1,7 @@
 import streamlit as st
 from typing import Dict
-from project.config import BetType, MatchCondition, QuantumState, QuantumBet, HumanBiasProfile
-from project.utils import safe_divide
+from config import BetType, MatchCondition, QuantumState, QuantumBet, HumanBiasProfile
+from utils import safe_divide
 
 class InitialOddsModule:
     def __init__(self, system):
