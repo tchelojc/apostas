@@ -1,7 +1,7 @@
 import streamlit as st
-from project.config import BetType, MatchCondition, QuantumState, QuantumBet  # Adicione QuantumBet aqui
-from project.utils import safe_divide
-from project.event_manager import EventManager
+from config import BetType, MatchCondition, QuantumState, QuantumBet  # Adicione QuantumBet aqui
+from utils import safe_divide
+from event_manager import EventManager
 
 STATE_KEYS = {
     'multi_bets': {
