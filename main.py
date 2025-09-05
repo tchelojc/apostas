@@ -1,18 +1,17 @@
 import os
 import sys
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 import streamlit as st
 import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-from project.quantum.optimizer import QuantumOptimizer
-from project.modules.initial_odds import InitialOddsModule
-from project.modules.multi_bets import MultiBetsModule
-from project.modules.in_play import InPlayModule
-from project.config import BetPortfolio, BetType, QuantumBet
-from project.utils import safe_divide
+from quantum.optimizer import QuantumOptimizer
+from modules.initial_odds import InitialOddsModule
+from modules.multi_bets import MultiBetsModule
+from modules.in_play import InPlayModule
+from config import BetPortfolio, BetType, QuantumBet
+from utils import safe_divide
+
 
 class BettingSystem:
     def __init__(self):
