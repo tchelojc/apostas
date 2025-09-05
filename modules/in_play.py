@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 from typing import Optional
 import plotly.express as px  # Adicione esta linha no topo com os outros imports
-from project.config import BetType, MatchCondition, QuantumState, QuantumBet
-from project.utils import safe_divide
-from project.event_manager import EventManager
+from config import BetType, MatchCondition, QuantumState, QuantumBet
+from utils import safe_divide
+from event_manager import EventManager
 from functools import lru_cache
 
 @lru_cache(maxsize=32)
